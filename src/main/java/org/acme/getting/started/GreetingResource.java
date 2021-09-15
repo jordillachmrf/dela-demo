@@ -9,6 +9,7 @@ import javax.ws.rs.core.MediaType;
 public class GreetingResource {
 
     @GET
+    @Path("/2")
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         return "Hello RESTEasy";
